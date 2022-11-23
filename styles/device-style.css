@@ -1,0 +1,61 @@
+.device-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1860px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.device-wrapper .device-images {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+
+.device-wrapper .device-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+
+.device-wrapper .device-images .device-img {
+  border-radius: 83px;
+  max-width: 651px;
+  height: auto;
+  position: relative;
+  margin-top: -250px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .device-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .device-wrapper .device-images {
+    width: 100%;
+  }
+  
+  .device-wrapper .device-text {
+    width: 100%;
+  }
+
+  .device-wrapper .device-images .device-img {
+    max-width: 651px;
+    margin-top: 0;
+  }
+
+  .device-wrapper .device-images {
+    padding: 24px;
+  }
+
+  .device-wrapper .device-text {
+    padding: 24px;
+  }
+}

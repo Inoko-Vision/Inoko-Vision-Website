@@ -1,0 +1,220 @@
+.head-backghround {
+  background-image: url("../assets/images/neurofet.png");
+  background-color: black;
+  box-sizing: content-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height: 947px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.head-wrapper {
+  width: 100%;
+  padding: 0;
+  padding: 40px 64px 0 64px;
+  max-width: 1428px;
+  height: 100%;
+}
+
+.head-wrapper .header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.head-wrapper .header-wrapper .logo-wrapper {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+.head-wrapper .header-wrapper .logo-wrapper img {
+  width: 38px;
+  height: 36px;
+  margin-right: 24px;
+}
+
+.head-wrapper .header-wrapper .logo-wrapper .logo-text {
+  font-family: 'Lato';
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 !important;
+  font-size: 30px;
+}
+
+.head-wrapper .header-wrapper .contact-button {
+  font-style: normal;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  width: 148px;
+  height: 52px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0B9FFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  margin-left: 120px;
+}
+
+.head-wrapper .header-wrapper .header-menu {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.header-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 24px;
+  font-weight: 400;
+  font-family: Roboto !important;
+}
+
+.head-wrapper .header-info-wrapper {
+  color: #FFFFFF;
+  font-family: 'Lato';
+  padding-top: 150px;
+  max-width: 470px;
+}
+
+.head-wrapper .header-info-wrapper .title {
+  font-size: 50px;
+  margin-bottom: 21px;
+}
+
+.head-wrapper .header-info-wrapper .message {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #E1E1E1;
+}
+
+.head-wrapper .header-wrapper .hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.head-wrapper .header-wrapper .hamburger div {
+  width: 35px;
+  height: 3.5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.head-img{
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 425px) {
+  .head-wrapper .header-info-wrapper .title {
+    font-size: 66px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .head-backghround {
+    background-size: cover;
+    padding-bottom: 32%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .head-wrapper .header-wrapper .contact-button {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .head-wrapper {
+    padding: 40px 20px 0 20px;
+  }
+
+  .head-wrapper .header-wrapper .hamburger {
+    display: block;
+  }
+
+  .head-wrapper .header-wrapper .contact-button {
+    display: none;
+  }
+
+  .head-wrapper .header-wrapper {
+    flex-direction: column;
+  }
+
+  .head-wrapper .header-wrapper .header-menu {
+    padding: 24px 0;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: solid 1px #0B9FFA;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: clip-path 0.3s ease-in-out;
+  }
+
+  .head-wrapper .header-wrapper .header-menu a {
+    margin: 8px 0;
+    font-size: 24px;
+  }
+
+  .head-wrapper .header-wrapper .logo-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .head-wrapper .header-info-wrapper {
+    padding: 64px 24px 0 24px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .head-wrapper .header-wrapper .header-menu[data-mobile-open="false"] {
+    clip-path: inset(0 0 100% 0);
+  }
+
+  .head-wrapper .header-wrapper .header-menu[data-mobile-open="true"] {
+    clip-path: inset(0 0 0 0);
+  }
+
+  .head-wrapper .header-info-wrapper .message {
+    max-width: 430px;
+  }
+
+  .head-backghround {
+    background-color: black;
+    box-sizing: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 850px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+}

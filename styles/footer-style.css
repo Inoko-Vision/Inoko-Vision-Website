@@ -1,0 +1,170 @@
+.footer-wrapper {
+    width: 100%;
+    height: 1016px;
+    background-image: linear-gradient(white 1%, rgba(255, 255, 255, 0.2) 1%), url("../assets/images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 100%;
+}
+
+.footer-wrapper .sign-up-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper .sign-up-wrapper .sign-up-content {
+    margin-top: 236px;
+    width: 1170px;
+    background: #020202;
+    border-radius: 45px;
+    padding: 66px 80px 82px 83px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper .sign-up-wrapper .sign-up-content .sign-up-message .title {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #0B9FFA;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-wrapper .sign-up-wrapper .sign-up-content .sign-up-message .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: wheat;
+    margin-top: 27px;
+}
+
+.footer-wrapper .sign-up-wrapper .input-wrapper {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrapper .sign-up-wrapper .input-wrapper input {
+    width: 337px;
+    height: 61px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 20px 0px 0px 20px;
+    padding: 0 8px 0 28px;
+    border: none !important;
+    font-family: "Roboto";
+}
+
+.footer-wrapper .sign-up-wrapper .input-wrapper button {
+    border: none !important;
+    font-family: "Roboto";
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0B9FFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 20px 20px 0px;
+    padding: 19px 27px 16px 28px;
+    height: 61px;
+}
+
+
+.footer-wrapper .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper .footer-content .footer-border {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper .footer-content .footer-border .social-media {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #E1E1E1;
+    margin: 0;
+    padding-top: 152px;
+}
+
+.footer-wrapper .footer-content .footer-border .social-media .social-media-icons-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.social-media .social-media-icons-wrapper .icon-wrapper {
+    width: 44px;
+    height: 44px;
+    background-color: rgb(87, 179, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.08);
+    margin-right: 15px;
+}
+
+.footer-wrapper .footer-content .footer-border .contact-wrapper {
+    padding-top: 84px;
+    color: white;
+}
+
+.footer-wrapper .footer-content .footer-border .contact-wrapper .title {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 38px;
+}
+
+.footer-wrapper .footer-content .footer-border .contact-wrapper .text {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+
+    .footer-wrapper {
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(to bottom, white 25%, rgb(15, 145, 222) 25%, rgb(15, 145, 222) 50%)
+    }
+
+    .footer-wrapper .sign-up-wrapper .sign-up-content {
+        margin-top: 150px;
+        width: 90%;
+        padding: 42px 36px;
+    }
+
+    .footer-wrapper .footer-content .footer-border {
+        width: 45%;
+    }
+
+    .footer-wrapper .footer-content .footer-border .social-media {
+        padding-top: 24px;
+    }
+
+    .footer-wrapper .footer-content .footer-border .contact-wrapper {
+        padding: 48px 0;
+    }
+
+    .footer-wrapper .sign-up-wrapper .input-wrapper {
+        width: 100%;
+        height: auto !important;
+        margin-top: 48px;
+    }
+
+    .footer-wrapper .sign-up-wrapper .input-wrapper input {
+        width: 80%;
+    }
+}

@@ -1,0 +1,51 @@
+.research-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.research-wrapper .research-content {
+  max-width: 1190px;
+  padding: 72px 0 115px 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.research-wrapper .title {
+  color: #171614;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.research-wrapper .text {
+  margin: 0;
+  padding-top: 22px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.research-wrapper h1 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  .research-wrapper .research-content {
+    justify-content: start;
+  }
+
+  .research-wrapper .research-content {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .research-wrapper .research-content {
+    margin: auto;
+  }
+}
