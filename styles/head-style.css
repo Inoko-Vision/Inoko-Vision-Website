@@ -58,14 +58,19 @@
   cursor: pointer;
   width: 148px;
   height: 52px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0B9FFA;
+  background: #0B9FFA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none !important;
+  border: 2px solid #0B9FFA !important;
   margin-left: 120px;
+  transition: all 0.2s ease-in-out;
+}
+
+.head-wrapper .header-wrapper .contact-button:hover {
+  background: transparent;
 }
 
 .head-wrapper .header-wrapper .header-menu {
@@ -82,6 +87,12 @@
   margin-right: 24px;
   font-weight: 400;
   font-family: Roboto !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-menu a:hover {
+  color: #34B2FF;
+  font-weight: bold;
 }
 
 .head-wrapper .header-info-wrapper {
@@ -94,6 +105,14 @@
 .head-wrapper .header-info-wrapper .title {
   font-size: 50px;
   margin-bottom: 21px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.8s ease-in-out, opacity 0.8s linear;
+}
+
+.head-wrapper .header-info-wrapper.active .title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .head-wrapper .header-info-wrapper .message {
@@ -103,6 +122,14 @@
   font-size: 16px;
   line-height: 30px;
   color: #E1E1E1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.8s ease-in-out 1s, opacity 0.8s linear 1s;
+}
+
+.head-wrapper .header-info-wrapper.active .message {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .head-wrapper .header-wrapper .hamburger {
@@ -171,6 +198,7 @@
     left: 0;
     top: 0;
     transition: clip-path 0.3s ease-in-out;
+    z-index: 1;
   }
 
   .head-wrapper .header-wrapper .header-menu a {
