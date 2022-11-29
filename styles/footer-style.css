@@ -121,6 +121,10 @@
   background-color: #0c679d;
 }
 
+.social-media .social-media-icons-wrapper .icon-wrapper a{
+  line-height: 0;  
+}
+
 .footer-wrapper .footer-content .footer-border .contact-wrapper {
     padding-top: 84px;
     color: white;
