@@ -34,19 +34,10 @@
   align-items: center;
 }
 
-.head-wrapper .header-wrapper .logo-wrapper img {
-  width: 38px;
-  height: 36px;
-  margin-right: 24px;
-}
-
-.head-wrapper .header-wrapper .logo-wrapper .logo-text {
-  font-family: 'Lato';
-  color: white;
-  font-style: normal;
-  font-weight: 700;
-  margin: 0 !important;
-  font-size: 30px;
+.head-wrapper .header-wrapper .logo-wrapper .logo-images{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .head-wrapper .header-wrapper .contact-button {
