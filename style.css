@@ -60,7 +60,7 @@ html{
 }
 
 .list li::before {
-  content: url("./assets/images/Vector.svg");
+  content: url("./assets/images/vector.svg");
   margin-right: 23px;
 }
 
