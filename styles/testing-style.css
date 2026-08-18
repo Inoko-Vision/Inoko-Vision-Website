@@ -113,6 +113,17 @@
   opacity: 1;
 }
 
+/* sub-heading + its bullet list read as one group */
+.testing-wrapper .testing-row .testing-text + .list {
+  margin-top: 8px;
+}
+
+/* without this, short paragraphs shrink to fit and get centred by the
+   column flex container while wrapped ones fill the width */
+.testing-wrapper .testing-row .testing-text {
+  width: 100%;
+}
+
 @media (min-width: 1440px) {
   .testing-wrapper .testing{
     gap: 140px;
