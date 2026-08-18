@@ -64,34 +64,36 @@
 .hardware-wrapper .images{
   overflow-x: hidden;
   position: absolute;
-  left: 0;
   top: -85px;
-  width: 100%;
+  right: 0;
+  /* 616px wide at the 1920px design width, narrowing with the viewport so the
+     photos never reach the text column or run off the right edge */
+  width: min(616px, calc(100vw - 1290px));
   height: 110%;
   display: none;
 }
 
 .hardware-wrapper .image-1{
-  max-width: 363px;
   position: absolute;
-  left: 1345px;
+  left: 6.7%;
+  width: 54%;
   border-radius: 67px;
 }
 
 .hardware-wrapper .image-2{
   position: absolute;
-  left: 1630px;
+  left: 52.9%;
+  width: 56.2%;
   top: 535px;
   border-radius: 67px;
-  max-height: 416px;
 }
 
 .hardware-wrapper .image-3{
   position: absolute;
-  left: 1304px;
+  left: 0;
+  width: 96.1%;
   top: 1166px;
   border-radius: 67px;
-  max-width: 592px;
 }
 
 @media screen and (min-width: 768px) {
